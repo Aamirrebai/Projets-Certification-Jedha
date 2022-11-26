@@ -1,0 +1,31 @@
+
+
+
+
+<h1>Prediction for target = {{target}} </h1>
+
+
+<h2>Message : {{message}}</h2>
+
+
+<p>Probability of pneumonia = {{proba}} </p>
+
+<h3 class="u-text u-text-1">Déposez votre image ici&nbsp;</h3>
+
+<form  method="POST" enctype="multipart/form-data">
+    <input type="file" id="imagefile" name="imagefile" capture>
+    <img src="image_path" id="image_path"/>
+    <button type="submit">Upload</button>
+</form>
+
+<div class="u-align-left u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+    <div class="u-container-layout u-container-layout-2">
+        <p class="u-text u-text-default u-text-3">{{pred}}</p>
+    </div>
+</div>
+
+
+
+
+<img src="{{ url_for('static', filename='_0_6137292.png') }}">
+

@@ -1,0 +1,87 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+
+
+<style>
+
+body {
+    height:100vh
+}
+
+</style>
+
+<body>
+
+<div class="container-fluid p-3 bg-primary text-black text-center">
+    <h2>Détection de présence ou non d'une pneumonie</h2>
+</div>
+
+
+
+<h4 class="text-center my-4">Déposez votre image ici</h4>
+
+
+
+
+<div class="card  mx-auto" style="width:50%;">
+    <form class="my-0" style="text-align: center" method="POST" enctype="multipart/form-data">
+        <input type="file" id="imagefile" name="imagefile" class="form-control mt-0 mb-1" capture>
+        <button class="btn btn-primary my-1" type="submit">Upload</button>
+    </form>
+</div>
+
+
+<br>
+
+
+{% if proba %}
+
+
+
+<div class="row mx-auto">
+
+    <div class="col-5 mx-auto text-center">
+        <h4 class="text-center">Image permettant de la détection</h4>
+
+        <img  src="{{ url_for('static', filename='image_uploaded.png') }}" class="img-fluid">
+        
+    </div>
+
+
+    <div class="col-5 text-center mx-auto my-auto ">
+        <h4 class="text-center">Aide au diagnostic</h4>
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Format image</th>
+                <th scope="col">Format après resizing</th>
+                <th scope="col">Probabilité</th>
+                
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">1</th>
+                <td>{{original_size}} px</td>
+                <td>({{size}}, {{size}}) px</td>
+                <td>{{proba_display}}</td>
+               
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+</div>
+
+
+{% endif %}
+
+</body>

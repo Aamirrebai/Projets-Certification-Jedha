@@ -1,0 +1,6 @@
+city_id,city_name,city_latitude,city_longitude,city_temperature,city_weather7
+20,Marseille,43.2961743,5.3699525,11.137142857142859,"['Clouds', 'Clouds', 'Clouds', 'Clouds', 'Clouds', 'Clouds', 'Rain']"
+19,Cassis,43.2140359,5.5396318,11.042857142857143,"['Clouds', 'Clouds', 'Clouds', 'Clouds', 'Rain', 'Clouds', 'Rain']"
+26,Saintes Maries de la mer,43.4522771,4.4287172,9.444285714285714,"['Clouds', 'Clouds', 'Clouds', 'Rain', 'Clouds', 'Clear', 'Clouds']"
+18,Bormes les Mimosas,43.1506968,6.3419285,9.381428571428572,"['Clouds', 'Clouds', 'Clouds', 'Rain', 'Rain', 'Clouds', 'Rain']"
+27,Collioure,42.52505,3.0831554,9.291428571428572,"['Rain', 'Clouds', 'Clouds', 'Rain', 'Clear', 'Clear', 'Rain']"
